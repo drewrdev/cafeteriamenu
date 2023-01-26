@@ -14,7 +14,7 @@ import { ContactComponent } from './cafeteriaMenu/pages/contact/contact.componen
     AppComponent,
     HeaderComponent,
     FooterComponent,
-
+    // HomeComponent
 
   ],
   imports: [

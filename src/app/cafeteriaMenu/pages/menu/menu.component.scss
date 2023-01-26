@@ -1,0 +1,95 @@
+@import '../../../../assets/scss/base/variables';
+@import '../../../../assets/scss/base/mixins';
+
+/* CONTENIDO */
+
+.content-principal {
+    background-color: $blanco;
+    padding: 5rem 2rem;
+  
+    @include tablet { 
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative;
+    }
+
+  }
+
+  .content-menu {
+    background-image: url(../../../../assets/img/cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    aspect-ratio: 3 / 6;
+    @include telefono { 
+        aspect-ratio: 3 / 4;
+    }
+    @include tablet { 
+        @include grid(2, $separacion);
+        aspect-ratio: 16 / 6;
+        background-size: 40%;
+        background-position: bottom right;
+    }
+
+    .text {
+        p {
+            font-size: 2rem;
+        }
+   
+    }
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+
+
+/* MENU */
+
+.nuestro-menu {
+  background-image: url(../../../../assets/img/menu_arriba.svg), url(../../../../assets/img/menu_abajo.svg), linear-gradient(to top, $primario, $primario);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 92%, 100%;
+  background-size: 200%;
+  padding: 15rem 2rem 20rem 2rem;
+
+  @include tablet {
+      padding: 15rem 0 20rem 0;
+      background-size: 100%;
+  }
+  @include desktop {
+      background-size: 50%, 50%, 100%;
+  }
+
+}
+.grid-menu {
+  @include tablet { 
+      @include grid(2, 2rem);
+  }
+}
+
+.menu {
+  h3 {
+      color: $blanco;
+  }
+  li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+          color: $blanco;
+          font-size: 2.2rem;
+          line-height: 1.5;
+          margin: 0 0 2rem 0;
+
+          span {
+              display: block;
+              color: $secundario;
+          }
+      }
+      .price {
+          font-size: 4rem;
+          font-weight: 700;
+      }
+  }
+}
