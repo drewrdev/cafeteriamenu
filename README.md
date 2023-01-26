@@ -38,10 +38,9 @@ Usamos GitHub para el control de versiones. Para conocer las versiones disponibl
 
 ## V1.0.1
 
-
-
-## V1.0.2
-
+- Proyecto completo.
+- incorporacion de rutas y modulos.
+- añadiendo los estilos correspondientes en cada modulo.
 
 
 ## Proximas Actualizaciones

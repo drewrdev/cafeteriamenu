@@ -1,53 +1,52 @@
-@import '../../../../assets/scss/base/variables';
-@import '../../../../assets/scss/base/mixins';
+@import "../../../../assets/scss/base/variables";
+@import "../../../../assets/scss/base/mixins";
 
 /* CONTENIDO */
 
 .content-principal {
-    background-color: $blanco;
-    padding: 5rem 2rem;
-  
-    @include tablet { 
-        padding: 10rem;
-        margin-top: -10rem;
-        position: relative;
-    }
-  
+  background-color: $blanco;
+  padding: 5rem 2rem;
+
+  @include tablet {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
   }
+}
 
 .process-cafe {
   margin-bottom: $separacion;
-  @include tablet { 
-      display: flex;
-      gap: $separacion;
-      align-items: center;
+  @include tablet {
+    display: flex;
+    gap: $separacion;
+    align-items: center;
   }
   &:last-of-type {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
   &:nth-child(even) {
-      .text {
-          order: -1;
-      }
+    .text {
+      order: -1;
+    }
   }
   .imagen,
   .text {
-      flex: 1;
+    flex: 1;
   }
   .text {
-      margin-top: 1rem;
-      h3 {
-          margin: 0;
-          text-align: left;
-          color: $primario;
+    margin-top: 1rem;
+    h3 {
+      margin: 0;
+      text-align: left;
+      color: $primario;
 
-          &::after {
-              content: '';
-              display: block;
-              width: 50%;
-              height: 5px;
-              background-color: $secundario ;
-          }
+      &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 5px;
+        background-color: $secundario;
       }
+    }
   }
 }
