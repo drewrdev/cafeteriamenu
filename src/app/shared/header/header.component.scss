@@ -1,0 +1,110 @@
+@import '../../../assets/scss/base/variables';
+@import '../../../assets/scss/base/mixins';
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  @include tablet { 
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .logo {
+      width: 50%;
+      margin: 0 auto;
+
+      @include tablet { 
+          width: 20rem;
+          margin: 0;
+      }
+  }
+}
+
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  @include tablet { 
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 0;
+  }
+
+  a {
+      text-align: center;
+      color: $blanco;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      @include tablet { 
+          margin-bottom: 0;
+      }
+
+      &:hover {
+          color: $secundario;
+      }
+
+      &.activo {
+          color: $secundario;
+      }
+  }
+}
+
+.header {
+  padding: 5rem 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include tablet { 
+      min-height: 70rem;
+  }
+
+  &::before {
+      content: '';
+      background-color: $negro;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .6;
+  }
+
+  .content-header {
+     position: relative;
+
+     h1 {
+         text-align: center;
+         color: $blanco;
+         text-transform: uppercase;
+         margin-top: 5rem;
+         @include tablet { 
+             margin-top: 10rem;
+         }
+     }
+  }
+
+}
+
+
+// // Header de cada página
+.header-inicio {
+  background-image: url(../../../assets/img/header_inicio.jpg);
+}
+// .header-nosotros {
+//   background-image: url(../../../assets/img/header_nosotros.jpg);
+// }
+// .header-process {
+//   background-image: url(../../../assets/img/header_proceso.jpg);
+// }
+// .header-menu {
+//   background-image: url(../../../assets/img/header_menu.jpg);
+// }
+// .header-gallery {
+//   background-image: url(../../../assets/img/header_gallery.jpg);
+// }
+// .header-contact {
+//   background-image: url(../../../assets/img/header_contacto.jpg);
+// }
