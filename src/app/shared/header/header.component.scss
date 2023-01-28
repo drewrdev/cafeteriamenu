@@ -46,7 +46,7 @@
       color: $secundario;
     }
 
-    &.activo {
+    &.active {
       color: $secundario;
     }
   }
@@ -58,7 +58,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   @include tablet {
-    min-height: 70rem;
+    min-height: 60rem;
   }
 
   &::before {
@@ -81,28 +81,13 @@
       text-transform: uppercase;
       margin-top: 5rem;
       @include tablet {
-        margin-top: 10rem;
+        margin-top: 7rem;
       }
     }
   }
 }
 
-// // Header de cada página
+// Header de cada página
 .header-inicio {
-  background-image: url(../../../assets/img/header_inicio.jpg);
+  background-image: url(../../../assets/img/header_proceso.jpg);
 }
-// .header-nosotros {
-//   background-image: url(../../../assets/img/header_nosotros.jpg);
-// }
-// .header-process {
-//   background-image: url(../../../assets/img/header_proceso.jpg);
-// }
-// .header-menu {
-//   background-image: url(../../../assets/img/header_menu.jpg);
-// }
-// .header-gallery {
-//   background-image: url(../../../assets/img/header_galeria.jpg);
-// }
-// .header-contact {
-//   background-image: url(../../../assets/img/header_contacto.jpg);
-// }

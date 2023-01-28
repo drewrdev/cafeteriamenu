@@ -6,12 +6,12 @@
       </div>
 
       <nav class="nav-principal">
-        <a routerLink="home" routerLinkActive="active">Inicio</a>
-        <a routerLink="aboutus">Nosotros</a>
-        <a routerLink="process">Proceso</a>
-        <a routerLink="menu">Menú</a>
-        <a routerLink="gallery">Galería</a>
-        <a routerLink="contact">Contacto</a>
+        <a href="#aboutus" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+        <a routerLink="aboutus" routerLinkActive="active">Nosotros</a>
+        <a routerLink="process" routerLinkActive="active">Proceso</a>
+        <a routerLink="menu" routerLinkActive="active">Menú</a>
+        <a routerLink="gallery" routerLinkActive="active">Galería</a>
+        <a routerLink="contact" routerLinkActive="active">Contacto</a>
       </nav>
     </div>
 

@@ -2,7 +2,7 @@
 # CafeteriaMenu
 Este proyecto es una Pagina Web diseñada para permitir al usuario ver el menu de la Cafeteria y todo lo que ofrece. Los usuarios tambien podran saber de la historia del cafe , observar imagenes Etc.
 
-<!-- ver pagina web  -->
+Enlace: https://drewcafeteria.netlify.app/
 
 ## Instalacion
 
@@ -26,7 +26,7 @@ y para iniciar el proyecto
 - Git-GitHub
 
 ## Versionado
-Usamos GitHub para el control de versiones. Para conocer las versiones disponibles, consulte las etiquetas (tags) en este repositorio .
+Use GitHub para el control de versiones. Para conocer las versiones disponibles, consulte las etiquetas (tags) en este repositorio .
 
 # Control de versiones
 

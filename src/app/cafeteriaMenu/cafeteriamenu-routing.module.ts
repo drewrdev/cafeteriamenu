@@ -14,13 +14,13 @@ const routes: Routes = [
     path: '',
     // component:HomeComponent,
     children: [
-      { path: 'home', component: HomeComponent },
+      { path: '', component: HomeComponent },
       { path: 'aboutus', component: AboutUsComponent },
       { path: 'process', component: ProcessComponent },
       { path: 'menu', component: MenuComponent },
       { path: 'gallery', component: GalleryComponent },
       { path: 'contact', component: ContactComponent },
-      { path: '**', redirectTo: 'home' }
+      { path: '**', redirectTo: '' }
     ]
   }
 
